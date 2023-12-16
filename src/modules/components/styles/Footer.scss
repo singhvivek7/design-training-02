@@ -1,0 +1,7 @@
+.footer-wrapper {
+  @apply bg-gray-900 text-white pt-14 py-8;
+
+  .footer {
+    @apply w-11/12 lg:w-2/3 m-auto grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-0;
+  }
+}

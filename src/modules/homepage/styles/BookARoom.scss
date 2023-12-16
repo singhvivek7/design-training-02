@@ -1,0 +1,60 @@
+.bar-wrapper {
+  @apply w-full my-12;
+
+  .bar {
+    @apply w-11/12 lg:w-2/3 m-auto bg-teal-100/50 rounded-2xl grid grid-rows-3 py-5 pb-10;
+
+    .heading {
+      @apply row-span-1 text-center py-2;
+      .book {
+        @apply text-4xl font-semibold;
+      }
+    }
+    .action {
+      @apply row-span-2 grid lg:grid-cols-7 content-center px-10 gap-8 lg:gap-0;
+
+      .date {
+        @apply lg:col-span-2 flex flex-col justify-center items-center;
+        .label {
+          @apply text-lg font-semibold pb-2;
+        }
+      }
+      .person {
+        @apply lg:col-span-3 flex flex-col justify-center items-center;
+
+        .label {
+          @apply text-lg font-semibold pb-2;
+        }
+
+        .options {
+          @apply flex items-center justify-center gap-5 flex-wrap;
+          .select-adult {
+            @apply flex items-center justify-center gap-2 bg-white px-5;
+            .adult {
+              @apply flex items-center justify-center gap-1;
+            }
+          }
+          .select-child {
+            @apply flex items-center justify-center gap-2 bg-white px-5;
+            .children {
+              @apply flex items-center justify-center gap-1;
+            }
+          }
+        }
+      }
+      .book-btn {
+        @apply lg:col-span-2 flex justify-center items-center;
+
+        button {
+          @apply bg-teal-600/70 text-white py-2 px-5 text-xl rounded-md uppercase transition-all hover:scale-105 active:scale-95;
+        }
+      }
+    }
+    select {
+      @apply p-2 outline-teal-500 cursor-pointer;
+    }
+    input {
+      @apply p-2 px-5 outline-teal-500 cursor-pointer;
+    }
+  }
+}

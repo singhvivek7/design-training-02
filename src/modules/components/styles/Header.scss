@@ -1,0 +1,27 @@
+.header-wrapper {
+  @apply w-screen fixed top-8 z-50;
+
+  .header {
+    @apply w-11/12 lg:w-2/3 h-20 m-auto bg-gray-50/80 backdrop-blur-sm text-gray-900 flex items-center justify-between px-10 text-xl;
+
+    .nav-link {
+      @apply transition-all hover:text-teal-700 active:text-teal-700 hidden lg:block;
+    }
+
+    .hamburger {
+      @apply text-4xl block lg:hidden;
+    }
+
+    .logo {
+      @apply object-cover p-5 cursor-pointer transition-all hover:scale-105 active:scale-95;
+    }
+
+    .mobile-nav {
+      @apply w-full m-auto h-[50vh] absolute top-20 left-0 flex justify-center items-center flex-col bg-gray-500 lg:hidden gap-2 rounded-b-xl;
+
+      .mobile-nav-link {
+        @apply w-full bg-teal-50 text-center py-3;
+      }
+    }
+  }
+}

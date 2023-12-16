@@ -1,0 +1,7 @@
+.card-wrapper {
+  @apply w-[400px] min-h-[400px] shadow-lg border-[1px] rounded-2xl p-5 pb-8 cursor-pointer transition-all hover:shadow-xl hover:-translate-y-2 active:scale-95 bg-white;
+
+  .card {
+    @apply flex flex-col items-center justify-center gap-2;
+  }
+}

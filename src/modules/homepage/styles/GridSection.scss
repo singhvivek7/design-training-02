@@ -1,0 +1,11 @@
+.grid-section-wrapper {
+  @apply w-full mb-14;
+
+  .grid-section {
+    @apply w-11/12 lg:w-2/3 m-auto flex gap-5 justify-center items-center flex-wrap;
+
+    .four-img {
+      @apply grid grid-cols-2 gap-5 flex-wrap;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.hero-wrapper {
+  background: url('../../../assets/img/hero.png');
+
+  @apply h-[80vh] bg-cover bg-no-repeat bg-center relative;
+
+  .hero {
+    @apply w-11/12 lg:w-2/3 h-full m-auto relative;
+
+    .text {
+      @apply text-6xl font-bold absolute bottom-20 left-0 text-white;
+    }
+  }
+
+  &::before {
+    content: '';
+    background: linear-gradient(#00800000, #0028ac83);
+    @apply inline-block h-[400px] w-full absolute bottom-0;
+  }
+}
